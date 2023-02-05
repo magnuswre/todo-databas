@@ -24,10 +24,10 @@ getTodos()
 
 
 const listaTodos = () => {  
-   
+   reverseLista = todos.reverse()
   // sliceLista = todos.slice(0, 7) // visar endast de sju senaste "posterna"
   todoLista.innerHTML = '' 
-  todos.forEach(todoCase => { 
+  reverseLista.forEach(todoCase => { 
   const todoElement = skapaAnvandareElement(todoCase) 
    todoLista.appendChild(todoElement) 
    })
